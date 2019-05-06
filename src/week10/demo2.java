@@ -11,16 +11,18 @@ public class demo2 {
 		a1.add(33);
 		a1.add(199);
 		a1.add(987);
+		
 		//对所有元素求和
 		int sum = 0;
+//		for(int i =0;i <a1.size();i++) {
+//			sum +=(int)a1.get(i);
 		Object[] oj = a1.toArray();
 		for (int i = 0;i < oj.length; i++) {
-			sum +=oj.length;
-			
-		
+			sum +=(int) oj[i];	
+					
 		}
 		System.out.print(sum);
-		
+
 		
 	}
 }
