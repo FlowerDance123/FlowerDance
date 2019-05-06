@@ -17,15 +17,28 @@ public class demo2 {
 //		int sum = 0;
 //		for(int i =0;i <a1.size();i++) {
 //			sum +=(int)a1.get(i);
+//		}
+//		System.out.print(sum);
+		
 //		Object[] oj = a1.toArray();
 //		for (int i = 0;i < oj.length; i++) {
 //			sum +=(int) oj[i];	
-	    Iterator iterator = a1.iterator();
-	    while(iterator.hasNext()) {
-	    	System.out.print(iterator.next() + " ");
-	    }
 //		}
 //		System.out.print(sum);
+		
+//	    Iterator iterator = a1.iterator();
+//	    while(iterator.hasNext()) {
+//	    	System.out.print(iterator.next() + " ");
+//	    }
+		
+		for(Object o : a1) {
+			System.out.println(o);
+		}
+		int result = 0;
+		for (Object o : a1) {
+			result +=(int)o;
+		}
+        System.out.println(result);
 
 		
 	}
